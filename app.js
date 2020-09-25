@@ -21,17 +21,12 @@ var url = process.env.DATABASEURL || 'mongodb://localhost:27017/yelp_camp'
 
 console.log(process.env.DATABASEURL)
 
-//mongoose.connect('mongodb://localhost:27017/yelp_camp',{
-//'mongodb+srv://Admin:s7uBwIfYLXjnrLUH@cluster0.v1uao.mongodb.net/<dbname>?retryWrites=true&w=majority'
+
 mongoose.connect(url, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
 
-
-//Admin
-// s7uBwIfYLXjnrLUH
-//mongodb+srv://Admin:<password>@cluster0.v1uao.mongodb.net/<dbname>?retryWrites=true&w=majority
 
 
 app.use(bodyParser.urlencoded({extended: true}));
