@@ -1,0 +1,74 @@
+Hi Everyone,
+Please read the following note carefully so that you may continue the course without issue:
+
+In the next lecture you will be exposed to the following syntax for including partials in your EJS view:
+
+<% include partials/header %>
+<% include partials/footer %>
+EJS has recently been updated to v3.0.1 and now uses the following syntax:
+
+<%- include("partials/header") %>
+<%- include("partials/footer") %>
+You can check your EJS version in your project's package.json file and update it, if need be, to v3.0.1, by running the following command in your terminal: npm i -S ejs
+
+Please let us know if you have any questions.
+
+Thank you,
+Ian
+
+Bootstrap 3.3 is used , anything newer will make a redesign necessary
+
+--------------------------
+codes used-
+npm init
+npm install express ejs --save
+npm install -g npm
+
+---------------------------------
+Server listen code- app.listen(3000, function() { 
+  console.log('Server listening on port 3000'); 
+});
+
+------------------------------------
+
+always need a directory "views" containing the ejs html sites
+
+for partials , a partials directory has to be put into the views directory
+
+for post sites and routing , npm install body-parser for this project
+------------------
+sql commands
+mysql-ctl cli
+---------------------------
+for the mongo db and mongoose 
+new terminal to constant run mongod command
+install mongoose from npm
+
+use the following for updates connect : 
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost:27017/yelp_camp',{
+	useNewUrlParser: true,
+	useUnifiedTopology: true
+});
+------------------------------
+Sample junk
+var campgrounds = [
+		{name: "Salmon Creek", image:"https://images.squarespace-cdn.com/content/v1/566b4adca2bab89284ee75b9/1553807571730-757FGNAE1BL91ITB4ZEQ/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/ocean-island-campsites"},
+		{name: "Granite Hill", image:"https://static.rootsrated.com/image/upload/s--57yGFSjg--/t_rr_large_traditional/hk4f6bggvuv1imvxfz1h.jpg"},
+		{name: "Mountain Goat's Rest", image:"https://ec.europa.eu/environment/emas/takeagreenstep/img/retina/article-eleven-header.jpg"},
+		{name: "Salmon Creek", image:"https://images.squarespace-cdn.com/content/v1/566b4adca2bab89284ee75b9/1553807571730-757FGNAE1BL91ITB4ZEQ/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/ocean-island-campsites"},
+		{name: "Granite Hill", image:"https://static.rootsrated.com/image/upload/s--57yGFSjg--/t_rr_large_traditional/hk4f6bggvuv1imvxfz1h.jpg"},
+		{name: "Mountain Goat's Rest", image:"https://ec.europa.eu/environment/emas/takeagreenstep/img/retina/article-eleven-header.jpg"}	
+	]
+
+Rest- a mapping between http and CRUD
+
+Create	
+Read	/allBlogs
+Update /updateBlog/:id
+Destroy /destroyBlog/:id
+
+
+
+
